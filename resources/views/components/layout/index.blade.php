@@ -10,11 +10,14 @@
 </head>
 
 <body>
-    {{$myheader ?? ''}}
+
+    {{ $header ?? ''}}
 
     {{ $slot}}
+
+    <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
+
 </body>
-<script src="{{ asset('/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('/js/app.js') }}"></script>
 
 </html>
